@@ -16,7 +16,7 @@
     --color-back: #212121;
     --color-text: #4f4f4f;
     --color-text-out: #90908e;
-    --color-primary: #ffbf00;
+    --color-primary: #ffdee8;
     --color-primary-out: #ffda6f;
     --color-secondary: #ffb0f4;
     --color-white: #ffffff;
@@ -144,4 +144,8 @@ section.categoria {
     padding: 8px 13px;
     border-radius: 15px;
     font-size: 16px;
+}
+
+.btn-white:hover, .btn-white.active {
+    background-color:var(--color-primary);
 }
