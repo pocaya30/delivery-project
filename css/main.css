@@ -6,8 +6,13 @@
 
 @font-face {
     font-family: 'PoppinsRegular';
-    src: url(../fonts/Poppins-Regular.otf);
-}
+    src: url(../fonts/Poppins-Regular.otf);}
+
+@font-face {
+    font-family: "Parisienne";
+    src: url(../fonts/Parisienne-Regular.ttf);
+}    
+
 
 
 /* variaveis de cores */
@@ -19,24 +24,38 @@
     --color-primary: #ffdee8;
     --color-primary-out: #ffda6f;
     --color-secondary: #ffb0f4;
-    --color-white: #ffffff;
+    
     --color-red: #e74c3c;
     --color-green: #2ecc71;
     --color-separate: #cccccc;
     --color-input-out: #ececec;
     --color-price: #d43f5d;
+/*paleta de cores atuais*/
+    /*--color-background:#A88E7D;*/
+    --color-primario:#A88E7D;
+    --color-cardTop:#4D000C;
+    --color-white: #ffffff;
+    --color-open:#CE863C;
+    --color-segundo:#663E3C;
+    --color-terceiro:#940018;
+
 }
 
 /*configurações padroes da página */
 html, body {
-    font-family: 'PoppinsRegular', 'Rubik', sans-serif;
-    background-color: var(--color-background);
+    font-family: 'PoppinsRegular', 'Rubik','Parisienne';
+    background-image: url(../img/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
     color: var(--color-text);
     font-size: 16px;
 }
 
 strong {
-    font-family: 'PoppinsMedium', 'Rubik', sans-serif;
+    font-family: "Parisienne", cursive;
+    
 }
 
 .bg-top{
@@ -45,7 +64,7 @@ strong {
     left: 0px;
     right: 0px;
     height: 110px;
-    background-color: var(--color-secondary);
+    background-color: var(--color-open);
 }
 
 .width-fix {
@@ -60,12 +79,13 @@ strong {
     font-size: 20px;
     box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1) !important;
     border: none !important;
+    background-color: var(--color-terceiro);
 }
 
 .container-img {
-    width: 60px;
-    height: 60px;
-    background-image: url(../img/logo.png);
+    width: 90px;
+    height: 100px;
+    background-image: url(../img/logot.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -81,9 +101,9 @@ strong {
 }
 
 .infos h1 {
-    font-size: 18px;
+    font-size: 32px;
     margin-bottom: 5px;
-    color: var(--color-back);
+    color: var(--color-white);
 }
 
 .infos-sub {
@@ -99,13 +119,13 @@ strong {
 }
 
 .status-open.closed {
-    color: var(--color-red);
+    color: var(--color-back);
 }
 
 .link {
     text-decoration: none !important;
     font-size: 14px;
-    color: var(--color-secondary) !important;
+    color: var(--color-open) !important;
 }
 
 section.categoria {
@@ -159,6 +179,7 @@ section.categoria {
 .container-group .card {
     padding: 15px;
     cursor: pointer;
+    
 }
 
 .container-img-produto {
